@@ -11,6 +11,7 @@ API REST desenvolvida em Java com Spring Boot para gerenciamento de dados do uni
 - PostgreSQL
 - Lombok
 - Springdoc OpenAPI (Swagger)
+- Docker
 - Maven
 
 ## 📦 Entidades
@@ -52,6 +53,16 @@ spring.datasource.password=sua_senha
 ```bash
 ./mvnw spring-boot:run
 ```
+
+## 🐳 Rodando com Docker
+
+Sem precisar instalar Java ou PostgreSQL na máquina, basta ter o Docker instalado:
+
+```bash
+docker-compose up --build
+```
+
+A API estará disponível em `http://localhost:8080/swagger-ui.html`
 
 ## 📄 Documentação
 
